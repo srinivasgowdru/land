@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Landing Page</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background: url('i1.jpg') center/cover no-repeat;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>this is delivery platform where we offer many services.</p>
+        <button id="learnMore">Learn More</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>we can offer delivery service</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>we provide loan oppurtunies.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>return accepted.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Awesome Landing Page</p>
+    </footer>
+    <script>
+        document.getElementById('learnMore').addEventListener('click', function() {
+            alert('You clicked Learn More!');
+        });
+    </script>
+</body>
+</html>
